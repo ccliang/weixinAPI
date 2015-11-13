@@ -1,0 +1,22 @@
+$kqinfo = array("card" => array());
+$kqinfo['card']['card_type'] = 'GENERAL_COUPON';
+$kqinfo['card']['general_coupon'] = array('base_info' => array(), 'default_detail' => array());
+$kqinfo['card']['general_coupon']['base_info']['logo_url'] = 'URL';
+$kqinfo['card']['general_coupon']['base_info']['code_type'] = 'CODE_TYPE_QRCODE';
+$kqinfo['card']['general_coupon']['base_info']['brand_name'] = '';
+$kqinfo['card']['general_coupon']['base_info']['title'] = '测试卡券';
+$kqinfo['card']['general_coupon']['base_info']['color'] = 'Color030';
+$kqinfo['card']['general_coupon']['base_info']['notice'] = '测试测试测试';
+$kqinfo['card']['general_coupon']['base_info']['description'] = '这是一张优惠券';
+$kqinfo['card']['general_coupon']['base_info']['date_info']['type'] = 1;
+$kqinfo['card']['general_coupon']['base_info']['date_info']['begin_timestamp'] = time();
+$kqinfo['card']['general_coupon']['base_info']['date_info']['end_timestamp'] = time() + 100 * 24 * 3600;
+$kqinfo['card']['general_coupon']['base_info']['sku']['quantity'] = 100000;
+$kqinfo['card']['general_coupon']['default_detail'] = '测试数据\n测试数据\n测试数据';
+ 
+//var_dump($kqinfo);
+//$kqinfo = json_encode($kqinfo);
+$kqinfo = C::enJson($kqinfo);
+ 
+//print_r( $kqinfo);
+//$resultData = $wx->wxCardCreated($kqinfo);
